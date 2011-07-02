@@ -1,0 +1,4 @@
+RewriteEngine on
+Options +FollowSymLinks
+RewriteCond %{REQUEST_URI} !css|scripts|images|install|forum.tar
+RewriteRule .* index.php
