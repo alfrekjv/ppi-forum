@@ -1,0 +1,345 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6
+Last Updated: 2010-08-18
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted inherit;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+/* end reset */
+
+header {
+	margin-bottom: 30px;
+}
+
+a { color: #44484E; }
+
+#nav-wrapper {
+	background-color: #EEEEEE;
+	padding: 12px;
+	color: #000000;
+	border-bottom: 7px solid black;
+}
+
+header nav li {
+	margin-right: 20px;
+	float: left;
+}
+
+body { background-color: #16171A; color: #FFFFFF; }
+
+header nav li:last-child {
+	margin-right: 0;
+}
+
+nav#subnav {
+	margin: 0;
+	
+}
+
+#subnav li {
+	background: #777;
+	display: block;
+	float: left;
+	margin-right: 7px;
+}
+
+/*#subnav li:last-child { float: right; }*/
+
+#subnav li a {
+	color: white;
+	display: block;
+	font-weight: bold;
+	padding: 6px 12px;
+	text-decoration: none;
+}
+
+#subnav li a:hover {
+	background-color: #C0C1C4;
+}
+
+.clear { clear: both; }
+.fl { float: left; }
+.fr { float: right; }
+.abs { position: absolute; }
+.rel { position: relative; }
+
+footer {
+	background-color: #EEEEEE;
+	border-top: 7px solid black;
+	clear: both;
+	color: #444;
+	margin-top: 30px;
+	padding: 15px;
+}
+
+
+.generic_box {
+	background-color:#202227;
+	border-bottom:1px solid #282A31;
+	border-top:1px solid #282A31;
+	-moz-box-shadow:0 0 18px #000000;
+	display:block;
+	position:relative;
+	z-index:10;
+}
+
+.generic_box a { color: #FFFFFF; }
+
+
+#question_view { position: relative; }
+
+#question_view .generic_box h1 a {
+	font-family: 'Trebuchet MS', 'Liberation Sans', 'DejaVu Sans', sans-serif;
+	font-size: 1.4em;
+	font-weight: bold;
+
+	margin-left: 19px;
+}
+
+#question_view .generic_box h1 {
+	margin-bottom: 17px;
+}
+
+#question_view .generic_box #vote_updown {
+	vertical-align: top;
+	width: 60px;
+	float: left;
+}
+
+#question_view .generic_box #message_body {
+	vertical-align: top;
+	float: left;
+	margin-bottom: 40px;
+	width: 735px;	
+	position: relative;
+	
+}
+
+
+#question_view #owner {
+	background-color: #808185;
+	height: 78px;
+	padding-left: 5px;
+	padding-top: 2px;
+	text-align: left;
+	vertical-align: top;
+	width: 250px;
+	position: absolute;
+	bottom: 12px;
+	right: 12px;
+	z-index: 10;
+}
+
+
+.vote-up-off, .vote-up-on, .vote-down-off, .vote-down-on, .star-on, .star-off {
+	background-position: 0px -265px;
+	display: block;
+	height: 25px;
+	margin: 0px auto;
+	width: 41px;
+}
+
+#hlogo a, .envelope-on, .envelope-off, .vote-up-off, .vote-up-on, .vote-down-off, .vote-down-on, .star-on, .star-off, .comment-up-off, .comment-up-on, .flag-off, .flag-on, .edited-yes, a.cc-wiki-link, .feed-icon, .statsarrow, .vote-accepted-off, .vote-accepted-on, .vote-accepted-bounty, .badge-earned-check, .delete-tag, .delete-tag-hover, .grippie, .expander-arrow-hide, .expander-arrow-show, .expander-arrow-small-hide, .expander-arrow-small-show, .anonymous-gravatar, .badge1, .badge2, .badge3, .add-interesting-tag-on, .add-interesting-tag-off {
+	background-image: url(../images/sprites.png);
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+
+.vote span {
+	color: #808185;
+	display: block;
+	font-weight: bold;
+}
+
+.vote-down-off {
+	background-position: 0px -300px;
+}
+
+.star-off, .star-on {
+	background-position: 0px -150px;
+	height: 31px;
+	width: 33px;
+}
+
+.vote-count-post {
+	display: block;
+	font-size: 240%;
+	
+}
+
+.vote {
+text-align:center;
+}
+
+
+
+.post-tag {
+	background-color: #808185;
+	border-bottom: 1px solid #3E6D8E;
+	border-right: 1px solid #7F9FB6;
+	color: #3E6D8E;
+	font-size: 90%;
+	line-height: 2.4;
+	margin: 2px 2px 2px 0px;
+	padding: 3px 4px;
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+.accept-answer-link {
+	color: #508850 !important;
+	font-weight: bold;
+}
+.accept-rate {
+	margin-bottom: 6px;
+	margin-left: 37px;
+	margin-top: 3px;
+}
+
+.user-info .user-gravatar32 {
+	float: left;
+	height: 32px;
+	width: 32px;
+}
+
+.user-info .user-action-time {
+	margin-bottom: 4px;
+	margin-top: 2px;
+}
+
+.user-info .user-details {
+	float: left;
+	margin-left: 5px;
+	overflow: hidden;
+	white-space: nowrap;
+	width: 145px;
+}
+
+.badge1, .badge2, .badge3 {
+	background-position: -40px -1034px;
+	display: inline-block;
+	height: 11px;
+	line-height: inherit;
+	margin: 0px 1px 1px 3px;
+	overflow: hidden;
+	vertical-align: text-bottom;
+	width: 6px;
+}
+
+.badge2 {
+background-position: -20px -1034px;
+}
+
+.badgecount {
+	color: #2A2B30;
+	padding-left: 1px;
+}
+
+.badge3 {
+	background-position: 0px -1034px;
+}
+
+.user-info {
+height: 60px;
+width: 200px;
+}
+
+.bold { font-weight: bold; }
+
+.user-details span { margin-right: 3px; }

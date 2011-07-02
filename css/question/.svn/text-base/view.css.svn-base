@@ -1,0 +1,33 @@
+.vote-up, .vote-down { cursor: pointer; }
+
+#question_view #question_details {
+	min-height: 100px;
+	background-color: #808185;
+	height: auto;
+	padding-left: 5px;
+	padding-top: 2px;
+	text-align: left;
+	vertical-align: top;
+	width: 250px;
+	position: absolute;
+	top: 12px;
+	right: 12px;
+	z-index: 10;
+}
+
+#question_view #question_details p {
+	margin-bottom: 0;
+	
+}
+
+#question_view #question_details p.value {
+	margin-bottom: 0;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+#question_view .post-tag {
+	background-color: #EEE;
+	color: #000000;
+	border: 1px solid #202227;
+}

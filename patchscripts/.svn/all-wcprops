@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/!svn/ver/14/trunk/patchscripts
+END
+initial-deployment.sql
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/7/trunk/patchscripts/initial-deployment.sql
+END
+tag-question_tag.sql
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/12/trunk/patchscripts/tag-question_tag.sql
+END
+tag.sql
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/14/trunk/patchscripts/tag.sql
+END
+tickettables.sql
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/2/trunk/patchscripts/tickettables.sql
+END
+answer.sql
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/13/trunk/patchscripts/answer.sql
+END
+setup.sql
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/4/trunk/patchscripts/setup.sql
+END

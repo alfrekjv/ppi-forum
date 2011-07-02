@@ -1,0 +1,1080 @@
+/* -----------------------------------------------------------------
+[Customise Stylesheet]
+
+Project:	    Qanda
+Author:         Travis <travis@travaganza.com.au>
+Since:	        1.0.0
+Last Modified:	2010-05-09
+
+Orange  #F47608
+    75% #F79846
+    50% #F9BA83
+    25% #FBDCC0
+White   #FEFEFE
+Maroon  #651703
+
+
+[TABLE OF CONTENTS]
+1. CSS Reset
+2. Generic Elements
+3. Wrapper
+4. Header
+    4.1 Logo
+    4.2 Website Title
+5. Navigation
+    5.1 Menu
+    5.2 Search Engine
+6. Content
+    6.1 Main Bar
+    6.2 Side Bar
+    6.3 Content Footer
+7. Footer
+8. Questions
+    8.1 Question Summary
+    8.2 Question/Answer Detail
+    8.3 Question/Answer Comments
+9. Answers
+10. Users
+    10.1 Registeration Form
+    10.2 Login Form
+    10.3 User Details
+        10.3.1 vCard
+    10.4 Edit User Profile
+11. Tags
+12. Badges
+13. Partials
+    13.1 Tag List
+    13.2 Post Form
+    13.3 Pagination
+14. Widgets
+    14.1 Login Form
+    14.2 User Detail
+    14.3 Welcome Box
+15. CSS Tools
+    15.1 Clear Fix
+    15.2 Image Replacement
+16. Plugins
+    16.1 Tooltip
+
+----------------------------------------------------------------- */
+
+
+
+/* -------------------------------------------------------------- */
+/* 1. CSS Reset
+/*  REF: http://developer.yahoo.com/yui/reset/
+/* -------------------------------------------------------------- */
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {   margin:0;  padding:0;  }
+table { border-collapse:collapse; border-spacing:0; 	}
+fieldset,img {  border:0; 	}
+address,caption,cite,code,dfn,em,strong,th,var {   font-style:normal;   font-weight:normal; 	}
+ol,ul { 	    list-style:none; 	}
+caption,th { 	text-align:left; 	}
+h1,h2,h3,h4,h5,h6 {   font-size:100%;   font-weight:normal; 	}
+q:before,q:after { content:''; }
+abbr,acronym { border:0; }
+
+
+
+/* -------------------------------------------------------------- */
+/* 2. Generic Elements
+/* -------------------------------------------------------------- */
+
+body {
+    color: #333;
+    font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+    font-size: 14px;
+    background-color: #16171A;
+}
+
+h1 { font-size: 32px; }
+h2 { font-size: 28px; }
+h3 { font-size: 20px; }
+h4 { font-size: 16px; }
+
+a {
+    color: #363C44;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+}
+
+a:hover, a:active {
+/*    color: #FFF;*/
+}
+
+form input:focus,
+form textarea:focus {
+    -webkit-box-shadow: 0 0 5px #F47608;
+    -moz-box-shadow:0 0 5px #F47608;
+}
+
+strong {
+    font-weight: bold;
+}
+
+/* -------------------------------------------------------------- */
+/* 3. Wrapper
+/* -------------------------------------------------------------- */
+
+#wrapper {
+    
+}
+
+
+
+/* -------------------------------------------------------------- */
+/* 4. Header
+/* -------------------------------------------------------------- */
+
+#header {
+    height: 150px;
+    width: 940px;
+    margin: 20px auto;
+}
+
+    /* -------------------------------------------------------------- */
+    /* 4.1 Logo                                                       */
+
+    #header .logo {
+        float: left;
+    }
+    
+    /* -------------------------------------------------------------- */
+    /* 4.2 Website Title                                              */
+    
+    #header .title {
+        float: left;
+        margin: 45px 0 0 40px;
+    }
+
+    #header .title h1 a {
+        color: #FEFEFE;
+    }
+
+    #header .title p {
+        margin: 5px 0 0 0;
+        font-size: 16px;
+        color: #FEFEFE;
+    }
+
+/* -------------------------------------------------------------- */
+/* 5. Navigation
+/* -------------------------------------------------------------- */
+
+#navigation {
+    width: 960px;
+    margin: 0 auto;
+}
+
+#navigation-inner {
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border: 3px solid #FEFEFE;
+}
+
+    /* -------------------------------------------------------------- */
+    /* 5.1 Menu                                                       */
+
+    #navigation ul {
+        float: left;
+    }
+
+    #navigation ul li {
+        float: left;
+        font-family: verdana;
+    }
+
+    #navigation ul li a {
+        display: block;
+        padding: 7px 15px 7px 16px;
+        border-left: 3px solid #FEFEFE;
+        font-weight: bold;
+        color: #FEFEFE;
+    }
+
+    #navigation ul li a:hover,
+    #navigation ul li a:active {
+        color: #CACFD5;
+    }
+
+    #navigation ul li.first a {
+        border: none;
+    }
+
+    #navigation ul li.last a {
+        border-right: 3px solid #FEFEFE;
+    }
+
+
+
+/* -------------------------------------------------------------- */
+/* 6. Content
+/* -------------------------------------------------------------- */
+
+#content {
+    width: 900px; /* 960 - 30 - 30 */
+    min-height: 600px;
+    margin: 30px auto 10px auto;
+    padding: 40px 30px;
+    background-color: #FEFEFE;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+
+}
+
+    /* -------------------------------------------------------------- */
+    /* 6.1 Main Bar                                                   */
+
+    #content .main-bar {
+        width: 660px;
+        float: left;
+    }
+
+    #content .main-bar.no-sidebar {
+        width: auto;
+        float: none;
+    }
+
+    #content .main-bar .subheader {
+        border-bottom: 1px solid #333;
+    }
+
+    /* -------------------------------------------------------------- */
+    /* 6.2 Side Bar                                                   */
+
+    #content .side-bar {
+        width: 220px;
+        float: right;
+        margin: 0 0 0 5px;
+    }
+
+    /* -------------------------------------------------------------- */
+    /* 6.3 Content Footer                                             */
+
+    #content .content-footer {
+        background-color: #ddd;
+    }
+
+
+
+/* -------------------------------------------------------------- */
+/* 7. Footer
+/* -------------------------------------------------------------- */
+
+#footer{
+    color: #FEFEFE;
+    padding: 10px 0 20px 0;
+    text-align: center;
+    font-size: 12px;
+}
+
+#footer-inner{
+    width: 940px;
+    margin: 0 auto;
+}
+
+
+
+/* -------------------------------------------------------------- */
+/* 8. Questions
+/* -------------------------------------------------------------- */
+
+    /* -------------------------------------------------------------- */
+    /* 8.1 Question Summary                                           */
+
+    .question-summary {
+        border-bottom: 1px dotted #ACAEAF;
+        margin: 10px 0 0 0;
+        padding: 0 0 10px 0;
+    }
+
+    .question-summary .stats {
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        background-color: #CACFD5;
+        float: left;
+        width: 80px;
+        padding: 0 0 5px 0;
+        text-align: center;
+    }
+
+    .question-summary .stats .answers {
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        background-color: #363C44;
+        width: 65px;
+        margin: 2px auto 5px auto;
+        padding: 4px 0;
+    }
+
+    .question-summary .stats .answered {
+        background: #F47608 url(../images/accepted-answer-background.png) 100% 100% no-repeat;
+    }
+
+
+    .question-summary .stats .votes .count,
+    .question-summary .stats .answers .count {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .question-summary .stats .votes .label,
+    .question-summary .stats .answers .label,
+    .question-summary .stats .views .label {
+        font-size: 12px;
+    }
+
+    .question-summary .stats .votes .count,
+    .question-summary .stats .answers .count,
+    .question-summary .stats .votes .label,
+    .question-summary .stats .answers .label {
+        display: block;
+    }
+
+
+    .question-summary .stats .answers .count,
+    .question-summary .stats .answers .label {
+        color: #FEFEFE;
+    }
+
+    .question-summary .summary {
+        width: 560px;
+        float: left;
+        margin: 0 0 0 15px;
+    }
+
+    .question-summary .summary h3 {
+        margin: 0 0 6px 0;
+    }
+
+    .question-summary .summary p.excerpt {
+        margin: 0 0 6px 0;
+    }
+
+    .question-summary .summary .meta {
+        float: right;
+        margin: 6px 0 0 0;
+    }
+
+    .question-summary .summary .meta .reputation {
+        background: transparent url(../images/reputation-icon.png) no-repeat 0 0;
+        padding: 0 0 0 12px;
+    }
+
+
+
+    /* -------------------------------------------------------------- */
+    /* 8.2 Question/Answer Detail                                     */
+
+    .post-detail {
+        margin: 15px 0 0 0;
+    }
+
+        /* -------------------------------------------------------------- */
+        /* 8.2.1 Panel                                                    */
+
+        .post-detail .panel {
+            width: 50px;
+            float: left;
+        }
+
+        .post-detail .panel .up-vote a {
+            width: 40px;
+            height: 30px;
+            background: transparent url(../images/up-arrow-inactive.png) no-repeat 0 0;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .post-detail .panel .up-voted a {
+            width: 40px;
+            height: 30px;
+            background: transparent url(../images/up-arrow-active.png) no-repeat 0 0;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .post-detail .panel .score {
+            font-size: 28px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .post-detail .panel .down-vote a {
+            width: 40px;
+            height: 30px;
+            background: transparent url(../images/down-arrow-inactive.png) no-repeat 0 0;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .post-detail .panel .down-voted a {
+            width: 40px;
+            height: 30px;
+            background: transparent url(../images/down-arrow-active.png) no-repeat 0 0;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .post-detail .panel .follow a {
+            width: 25px; /* 40 - 15 */
+            height: 25px; /* 40 - 15 */
+            background: transparent url(../images/star-inactive.png) no-repeat 0 0;
+            display: block;
+            margin: 10px auto 0 auto;
+            padding: 15px 0 0 15px;
+        }
+
+        .post-detail .panel .followed a {
+            width: 25px; /* 40 - 15 */
+            height: 25px; /* 40 - 15 */
+            background: transparent url(../images/star-active.png) no-repeat 0 0;
+            display: block;
+            margin: 10px auto 0 auto;
+            padding: 15px 0 0 15px;
+        }
+        
+        .post-detail .panel .accept-answer a {
+            width: 40px;
+            height: 31px;
+            background: transparent url(../images/tick-inactive.png) no-repeat 0 0;
+            display: block;
+            margin: 10px auto 0 auto;
+        }
+
+        .post-detail .panel .answer-accepted a {
+            width: 40px;
+            height: 31px;
+            background: transparent url(../images/tick-active.png) no-repeat 0 0;
+            display: block;
+            margin: 10px auto 0 auto;
+        }
+
+        .post-detail .panel .answer-accepted span {
+            width: 40px;
+            height: 31px;
+            background: transparent url(../images/tick-active.png) no-repeat 0 0;
+            display: block;
+            margin: 10px auto 0 auto;
+        }
+
+        .post-detail .panel .view {
+            text-align: center;
+            margin: 10px 0 0 0;
+            color: #999;
+        }
+
+        /* -------------------------------------------------------------- */
+        /* 8.2.1 Detail                                                    */
+
+        .post-detail .detail {
+            width: 595px;
+            float: left;
+            margin: 0 0 0 10px;
+        }
+
+        .post-detail .detail .content {
+            overflow: auto;
+        }
+
+        .post-detail .detail .add-comment a {
+            border: 1px solid #BAC2C6;
+            padding: 2px 6px;
+        }
+
+        .post-detail .detail .add-comment a:hover,
+        .post-detail .detail .add-comment a:active {
+            background-color: #EFEFEF;
+            padding: 2px 6px;
+        }
+
+
+        .post-detail ul.tags {
+            margin: 10px 0 0 0;
+        }
+
+        .post-detail .meta,
+        .post-detail .add-comment {
+            width: 400px;
+            float: left;
+            margin: 15px 0 0 0;
+        }
+
+        .post-detail .user-summary {
+            float: right;
+        }
+
+
+        
+    /* -------------------------------------------------------------- */
+    /* 8.3 Question/Answer Comments                                   */
+
+    .post-detail .comments {
+        width: 600px;
+        float: left;
+        margin: 15px 0 0 10px;
+        border-top: 1px dashed #BAC2C6;
+    }
+    
+    .post-detail .comments .comment {
+        margin: 5px 0 0 0;
+    }
+
+    /*
+    .post-detail .comments .comment .comment-panel {
+        float: left;
+    }
+    */
+    
+    .post-detail .comments .comment .content {
+        float: left;
+        /*
+        width: 550px;
+        margin: 0 0 0 5px;
+        */
+    }
+
+    
+
+/* -------------------------------------------------------------- */
+/* 9. Answers
+/* -------------------------------------------------------------- */
+
+.answers-list {
+    margin: 20px 0 20px 0;
+}
+
+.answers-list .answer {
+    border-bottom: 1px dotted #ACAEAF;
+    padding: 0 0 10px 0;
+}
+
+
+
+/* -------------------------------------------------------------- */
+/* 10. Users
+/* -------------------------------------------------------------- */
+
+.user-summary {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    width: 150px;
+    height: 50px;
+    border: 1px solid #BAC2C6;
+    margin: 10px 12px 0 0;
+    float: left;
+    background-color: #EFEFEF;
+}
+
+.user-summary .avatar {
+    float: left;
+    margin: 9px 0 0 9px;
+}
+
+.user-summary .user-details {
+    float: left;
+    margin: 9px 0 0 8px;
+    width: 90px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.user-summary .user-details a {
+    font-size: 12px;
+}
+
+.user-summary .user-details .reputation {
+    background: transparent url(../images/reputation-icon.png) no-repeat 0 0;
+    padding: 0 0 0 12px;
+}
+
+
+
+
+    /* -------------------------------------------------------------- */
+    /* 10.1 Registeration Form                                        */
+
+    form.register_form {
+        margin: 20px 0 0 0;
+    }
+
+    form.register_form label.username {
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    form.register_form input#username {
+        border: 1px solid #BAC2C6;
+        width: 200px;
+        margin: 0 0 20px 78px;
+        padding: 3px 5px;
+    }
+
+    form.register_form label.email {
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    form.register_form input#email {
+        border: 1px solid #BAC2C6;
+        width: 200px;
+        margin: 0 0 20px 114px;
+        padding: 3px 5px;
+    }
+
+    form.register_form label.password {
+        font-weight: bold;
+        font-size: 16px;
+        width: 50px;
+    }
+
+    form.register_form input#password {
+        border: 1px solid #BAC2C6;
+        width: 200px;
+        margin: 0 0 20px 80px;
+        padding: 3px 5px;
+    }
+
+    form.register_form input#password_confirm {
+        border: 1px solid #BAC2C6;
+        width: 200px;
+        margin: 0 0 20px 22px;
+        padding: 3px 5px;
+    }
+
+    form.register_form input#submit_register {
+        border: 1px solid #BAC2C6;
+        padding: 5px;
+    }
+
+    /* -------------------------------------------------------------- */
+    /* 10.2 Login Form                                                */
+
+    .main-bar form.login_form {
+        margin: 20px 0 0 0;
+    }
+
+    .main-bar form.login_form label.username {
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .main-bar form.login_form input#username {
+        border: 1px solid #BAC2C6;
+        width: 200px;
+        margin: 0 0 20px 20px;
+        padding: 3px 5px;
+    }
+
+    .main-bar form.login_form label.password {
+        font-weight: bold;
+        font-size: 16px;
+        width: 50px;
+    }
+
+    .main-bar form.login_form input#password {
+        border: 1px solid #BAC2C6;
+        width: 200px;
+        margin: 0 0 20px 22px;
+        padding: 3px 5px;
+    }
+
+    .main-bar form.login_form input#submit_login {
+        border: 1px solid #BAC2C6;
+        padding: 5px;
+    }
+
+    /* -------------------------------------------------------------- */
+    /* 10.3 User Details                                              */
+
+        /* -------------------------------------------------------------- */
+        /* 10.3.1 vCard                                                   */
+
+        .vcard {
+            margin: 15px 0 0 0;
+        }
+
+        .vcard .meta {
+            float: left;
+            margin: 0 5px 0 0;
+            width: 150px;
+            text-align: center;
+        }
+
+        .vcard .meta .reputation {
+            margin: 10px 0 0 0;
+        }
+
+        .vcard .meta .reputation .value {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .vcard .meta .view-count {
+            margin: 15px 0 0 0;
+        }
+
+        .vcard .summary {
+            float: left;
+            margin: 0 5px 0 0;
+            width: 355px;
+        }
+
+        .vcard .summary h3 {
+            margin: 0 0 10px 0;
+        }
+
+        .vcard .summary div .label {
+            width: 130px;
+            float: left;
+            margin: 5px 0;
+        }
+
+        .vcard .summary div .value {
+            width: 220px;
+            float: left;
+            margin: 5px 0;
+        }
+
+        .vcard .summary .control_panel {
+            float: left;
+            margin: 10px 0 0 0;
+            font-size: 12px;
+        }
+
+        .vcard .description {
+            float: left;
+            width: 360px;
+            height: 200px;
+            overflow: auto;
+            background-color: #EEE;
+            padding: 10px;
+        }
+
+    /* -------------------------------------------------------------- */
+    /* 10.4 Edit User Profile                                         */
+
+    form.edit_user_form {
+        margin: 20px 0 0 0;
+    }
+
+    form.edit_user_form label.display_name {
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    form.edit_user_form input#display_name {
+        border: 1px solid #BAC2C6;
+        width: 200px;
+        margin: 0 0 20px 78px;
+        padding: 3px 5px;
+    }
+
+    form.edit_user_form label.website {
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    form.edit_user_form input#website {
+        border: 1px solid #BAC2C6;
+        width: 200px;
+        margin: 0 0 20px 122px;
+        padding: 3px 5px;
+    }
+
+    form.edit_user_form label.location {
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    form.edit_user_form input#location {
+        border: 1px solid #BAC2C6;
+        width: 200px;
+        margin: 0 0 20px 116px;
+        padding: 3px 5px;
+    }
+
+    form.edit_user_form input#submit_user_edit {
+        border: 1px solid #BAC2C6;
+        padding: 5px;
+    }
+
+
+
+/* -------------------------------------------------------------- */
+/* 11. Tags
+/* -------------------------------------------------------------- */
+
+.tag-summary {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    width: 200px;
+    margin: 15px 20px 0 0;
+    float: left;
+    background-color: #363C44;
+}
+    /* -------------------------------------------------------------- */
+    /* 11.1 Generic Tag                                             */
+
+    .tag a{
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        padding: 4px 8px;
+        text-decoration: none;
+        background-color: #CACFD5;
+    }
+
+    .tag a:hover,
+    .tag a:active {
+        background-color: #363C44;
+	color: #FFF;
+    }
+
+    /* -------------------------------------------------------------- */
+    /* 11.2 Tag with Counts                                           */
+
+    .tag-summary .tag a{
+        padding: 4px 8px;
+        width: 160px;
+        display: block;
+        float: left;
+    }
+
+    .tag-summary .count{
+        display: block;
+        float: right;
+        padding: 4px 8px;
+	color: #FFF;
+    }
+
+
+
+/* -------------------------------------------------------------- */
+/* 13. Partials
+/* -------------------------------------------------------------- */
+
+    /* -------------------------------------------------------------- */
+    /* 13.1 Tag List                                                  */
+
+    ul.tags {
+        float: left;
+    }
+
+    ul.tags li {
+        float: left;
+        margin: 5px 5px 0 0;
+    }
+
+    /* -------------------------------------------------------------- */
+    /* 13.2 Post Form                                                 */
+
+    form.post_form {
+        margin: 20px 0 0 0;
+    }
+
+    form.post_form label.post_title {
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    form.post_form input#post_title {
+        border: 1px solid #BAC2C6;
+        width: 538px;
+        margin: 0 0 20px 20px;
+        padding: 3px 5px;
+    }
+
+    form.post_form label.post_body {
+        display: none;
+    }
+
+    form.post_form textarea#post_body {
+        border: 1px solid #BAC2C6;
+        width: 600px;
+        height: 130px;
+        margin: 0 0 20px 0;
+        padding: 5px;
+    }
+
+    form.post_form label.post_tags {
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    form.post_form input#post_tags {
+        border: 1px solid #BAC2C6;
+        width: 400px;
+        margin: 0 0 20px 20px;
+        padding: 3px 5px;
+    }
+
+    form.post_form input#submit_post {
+        border: 1px solid #BAC2C6;
+        padding: 5px;
+    }
+
+    form.post_form label.display_name {
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    form.post_form input#display_name {
+        border: 1px solid #BAC2C6;
+        width: 200px;
+        margin: 0 0 20px 20px;
+        padding: 3px 5px;
+    }
+
+    form.post_form label.email {
+        font-weight: bold;
+        font-size: 16px;
+        width: 50px;
+    }
+
+    form.post_form input#email {
+        border: 1px solid #BAC2C6;
+        width: 200px;
+        margin: 0 0 20px 22px;
+        padding: 3px 5px;
+    }
+
+    /* -------------------------------------------------------------- */
+    /* 13.3 Pagination                                                */
+
+    .pagination {
+        /*border: 1px solid red;*/
+        margin: 10px 0 0 0;
+    }
+
+    .pagination span {
+        padding: 5px;
+        margin: 5px 2px 0 2px;
+        display: block;
+        float: left;
+        text-align: center;
+    }
+
+    .pagination span.page {
+        border: 2px solid #F47608;
+        width: 20px;
+        text-align: center;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        font-weight: bold;
+    }
+
+    .pagination span.current_page {
+        color: #F47608;
+        background-color: #FBDCC0;
+    }
+
+    .pagination span a {
+        padding: 4px 6px;
+    }
+
+    .pagination span a:hover,
+    .pagination span a:active {
+        color: #F47608;
+    }
+
+
+    
+/* -------------------------------------------------------------- */
+/* 14. Widgets
+/* -------------------------------------------------------------- */
+
+    .widget {
+        border: 1px solid #ACAEAF;
+        padding: 15px 10px 10px 15px;
+        margin: 0 0 15px 0;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+    }
+
+    .widget h3 {
+        margin: 0 0 10px 0;
+    }
+
+    .widget p {
+        margin: 3px 0 5px 0;
+    }
+
+    .widget a {
+        border-bottom: 1px dashed #7F341F;
+    }
+
+    .widget a:hover,
+    .widget a:active {
+        border-bottom: none;
+    }
+
+    /* -------------------------------------------------------------- */
+    /* 14.1 Login Form                                                */
+
+    #login-widget form input {
+        margin: 5px 0;
+        padding: 2px;
+        border: 1px solid #ACAEAF;
+    }
+
+    /* -------------------------------------------------------------- */
+    /* 14.2 User Detail                                               */
+
+    #user-widget ul li {
+        margin: 3px 0;
+    }
+
+
+    
+/* -------------------------------------------------------------- */
+/* 15. CSS Tools
+/* -------------------------------------------------------------- */
+
+    /* -------------------------------------------------------------- */
+    /* 15.1 Clear Fix                                                 */
+
+    .clearfix:after {
+        content: "."; 
+        display: block; 
+        height: 0; 
+        clear: both; 
+        visibility: hidden;
+    }
+    .clearfix {display: inline-block;}
+    /* Hides from IE-mac \*/
+    * html .clearfix {height: 1%;}
+    .clearfix {display: block;}
+    /* End hide from IE-mac */
+
+    /* -------------------------------------------------------------- */
+    /* 15.2 Image Replacement                                         */
+
+    .ir {
+        display:block;
+        overflow:hidden;
+        text-decoration:none;
+        text-indent:-90000em;
+    }
+
+
+
+/* -------------------------------------------------------------- */
+/* 16. Plugins
+/* -------------------------------------------------------------- */
+
+    /* -------------------------------------------------------------- */
+    /* 16.1 Tooltip                                                 */
+
+    #tooltip {
+        padding: 10px;
+        position: absolute;
+        z-index: 3000;
+        background-color: #EFEFEF;
+        color: #7F341F;
+        opacity: 0.85;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+    }

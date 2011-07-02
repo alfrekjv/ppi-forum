@@ -1,0 +1,71 @@
+h1. Qanda
+
+Author: Travis Lin <travis[at]travaganza[dot]com[dot]au>
+Website: "http://www.qandasystem.com/":http://www.qandasystem.com/
+
+
+h2. Description
+
+Qanda is an open-source Question and Answer System (QAS) written in PHP 5 and using Kohana MVC framework. It is built with simplicity in mind: lightweight, themable and each to extend.
+
+Qanda is currently under beta development, we are looking for programming enthusiasts to participate in this exciting project. 
+
+
+
+h2. Design Goal
+
+The aim for 1.0 release is to demostrate QAS at its minimum: that is, the simpliest form.
+
+Fundamental goal of Qanda 1.0 is to achieve the following:
+
+* Ask Question
+* Answer Question
+* Comment on Question and Answer
+* Accept Answer
+* Vote on Question and Answer
+
+Qanda is designed with forwarding thinking, features that are not part of fundamental are encouraged to be extended as application addons. That include theme switcher, social extensions like badges, follows and widgets like suggestions, tag clouds.
+
+
+
+h2. Basic Requirement
+
+* HTTP Server with Unicode support such as Apache
+* PHP version 5.2.3 or above
+* MySQL 5.1 or above
+
+Master project is developing and tested in Apache 2.2.11, PHP 5.3.0 and MySQL 5.1.36.
+
+
+
+h2. Install
+
+* Setup database table schema by import from <code>MYSQL_TABLE_SCHEMAS.sql</code> file.
+* Populate database tables by import from <code>MYSQL_SAMPLE_RECORDS.sql</code> file.
+* Copy the folder to designated directory
+* Update <code>RewriteBase</code> in <code>.htaccess</code> file to reflect to your folder structure
+* Update database connection values in <code>application/config/database.php</code> file.
+
+
+
+h2. Changelog
+
+Detail in "changelog on GitHub Wiki":http://wiki.github.com/qanda/Qanda/qanda-changelog .
+
+
+
+h2. Submitting Bugs
+
+Please use "GitHub Issues Manager":http://github.com/qanda/Qanda/issues to report all bugs or feature requests.
+
+
+
+h2. Demo Site
+
+Demo is now available on "http://demo.qandasystem.com/":http://demo.qandasystem.com/ . Feel free to test out the system and have your say on "GitHub wiki":http://wiki.github.com/qanda/Qanda/ or "issues manager":http://github.com/qanda/Qanda/issues .
+
+
+****************************************************************************
+
+
+Copyright (c) 2010 Travis Lin, released under the MIT license
