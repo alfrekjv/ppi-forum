@@ -5,14 +5,14 @@
  */
 class APP_Model_Application extends PPI_Model {
 
-	function __construct($p_iTableName = '', $p_iTableIndex = '', $p_sDBKey = '', $p_iRecordID = 0) {
-		parent::__construct($p_iTableName, $p_iTableIndex, $p_sDBKey, $p_iRecordID);
+	function __construct($p_iTableName = "", $p_iTableIndex = "", $p_sBdbInfo = "", $p_iRecordID = 0) {
+		parent::__construct($p_iTableName, $p_iTableIndex, $p_sBdbInfo, $p_iRecordID);
 	}
 
 	/**
 	 * Convert the result of PPI_Model->getList() to a dropdown result
 	 *
-	 * @param array $getList result
+	 * @param array $getList
 	 */
 	function convertGetListToDropdown($getList, $descriptionKey) {
 		$newArray = array();
@@ -58,4 +58,7 @@ class APP_Model_Application extends PPI_Model {
 		return date($sDateFormat, (int) $p_iTimestamp);
 	}
 
+    function getCache() {
+        return PPI_Helper::getCache();
+    }
 }

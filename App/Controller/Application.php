@@ -6,8 +6,8 @@
  */
 class APP_Controller_Application extends PPI_Controller {
 
-	function __construct ($p_preloadModels = array(), $p_ControllerType = PPI_CONTROLLER) {
-		parent::__construct($p_preloadModels, $p_ControllerType);
+	function __construct () {
+		parent::__construct();
 	}
 
 	/**
@@ -17,7 +17,7 @@ class APP_Controller_Application extends PPI_Controller {
 	 */
 	function isAdminLoggedIn() {
 		$aAuthData = $this->getAuthData();
-		return (isset($aAuthData['role_name']) 
+		return (isset($aAuthData['role_name'])
 			&& ($aAuthData['role_name'] == 'administrator' || $aAuthData['role_name'] == 'developer'));
 	}
 
@@ -38,11 +38,10 @@ class APP_Controller_Application extends PPI_Controller {
 	 */
 	function loginCheck() {
 		if(!$this->isLoggedIn()) {
-			$this->setFlashMessage('You must be logged in to view that page.');
 			$this->loginRedirect();
 		}
 	}
-	
+
 	/**
 	 * Redirect to the login page, saving the return url in the session
 	 *
@@ -52,5 +51,13 @@ class APP_Controller_Application extends PPI_Controller {
 		$this->redirect('user/login');
 	}
 
+	/**
+	 * Get the cache object
+	 *
+	 * @return PPI_Cache
+	 */
+	public static function getCache() {
+		return PPI_Helper::getCache();
+	}
 
 }

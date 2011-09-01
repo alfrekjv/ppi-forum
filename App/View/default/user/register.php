@@ -1,17 +1,4 @@
-<div class="full_container">
-<div class="top"></div>
-
-	<div class="middle">
-	
-		<div id="formpageheader"><h1>Register</h1></div>
-		<div class="register" id="registerform">
-		    <div class="formhalfblock">
-		   		 <?php include($viewDir . 'formrenderer.php'); ?>
-
-		    </div>
-		</div>
-		
-	</div>
-	
-<div class="bottom"></div>	
-</div>
+<section class="box_1" style="margin-top: 25px; padding: 25px; text-align: left;">
+	<h1 style="font-size: 18px; margin-bottom: 20px;">Register</h1>
+	<?php include($viewDir . 'formrenderer.php'); ?>
+</section>

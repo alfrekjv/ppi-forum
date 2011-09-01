@@ -1,10 +1,16 @@
-<ul>
-<?php foreach($aTopQuestions as $question) { ?>
-	<li>
-		<?php echo (int) $question['views']; ?> Views - 
-		<?php echo $question['numAnswers']; ?> Answers - 
-		<?php echo $question['numVotes']; ?> Votes -
-		<a href="<?php echo $baseUrl; ?>question/view/<?php echo $question['id']; ?>/<?php echo str_replace(' ', '-', $question['title']); ?>"><?php echo $question['title']; ?></a>
-	</li>
-<?php } ?>
-</ul>
+<article class="content-box home">
+    <?php if($isLoggedIn): ?>
+    <?php endif; ?>
+    <p class="title">Select a project</p>
+    <ul>
+    <?php
+        if(count($repos) > 0) {
+            foreach($repos as $repo) {
+                echo "<li><a href='".$baseUrl."ticket/index/filter/cat/". str_replace(' ', '-', $repo["repoName"])."'>".$repo["repoName"]."</a></li>";
+            }
+        } else {
+            echo 'No Categories present.';
+        }
+    ?>
+    </ul>
+</article>

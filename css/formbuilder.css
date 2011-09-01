@@ -31,11 +31,14 @@
 }
 
 #formbuilder_form label.error {
-  background:url("../images/formbuilder_unchecked.gif") no-repeat 0px 0px;
-  padding-left: 21px;
+  background:url("../images/error-4.png") no-repeat 0px 0px;
+  padding-left: 22px;
   padding-bottom: 2px;
   font-weight: bold;
-  color: #F29A6A;
+  margin-top: 7px;
+  height: 16px;
+  display: block;
+  color: #EA5200;
 }
 
 #formbuilder_form label.checked {
@@ -92,4 +95,15 @@
 
 #formbuilder_form #lsignupsubmit {
   visibility: hidden;
+}
+
+.formLabel label { 
+	display: block;
+	margin-top: 8px;
+}
+
+label .req {
+	margin-left: 2px;
+	margin-right: 2px;
+	color: red;
 }

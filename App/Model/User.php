@@ -3,10 +3,9 @@ class APP_Model_User extends PPI_Model_User  {
 	public $_registerFormStructure = array(
         'fields' => array(
                 'first_name'            => array('type' => 'text', 'label' => 'First name', 'size' => 30),
-                'last_name'             => array('type' => 'text', 'label' => 'Last name',  'size' => 30),	
-                'username'              => array('type' => 'text', 'label' => 'Username',   'size' => 30),	
+                'last_name'             => array('type' => 'text', 'label' => 'Last name', 'size' => 30),	
         		'email'                 => array('type' => 'text', 'label' => 'Email address', 'size' => 30),
-				'password'              => array('type' => 'password', 'label' => 'Enter Password',   'size' => 30),
+				'password'              => array('type' => 'password', 'label' => 'Enter Password', 'size' => 30),
                 'password2'            	=> array('type' => 'password', 'label' => 'Confirm Password', 'size' => 30),
 				'submit'                => array('type' => 'submit', 'label' => '', 'value' => 'Register')
 
@@ -17,7 +16,6 @@ class APP_Model_User extends PPI_Model_User  {
 												array('type' => 'email', 'message' => 'You must enter a valid email address'),
 												array('type' => 'minlength', 'message' => 'Your email must consist of at least 5 characters', 'value' => 5),
 										   ),
-                'username'              => array('type' => 'required', 'message' => 'Please enter your username'),
                 'password'              => array('type' => 'required', 'message' => 'Please enter your password'),
                 'password2'             => array(
                 								array('type' => 'required', 'message' => 'Please confirm your password'),

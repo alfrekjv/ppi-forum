@@ -1,9 +1,7 @@
-.ppi-flash-success { background-color: #edffec; color: #000000; }
-.ppi-flash-failure { background-color: #ffecec; color: #000000; }
+.ppi-flash-success { background-color: #edffec; color: #000000; padding-top: 7px; }
+.ppi-flash-failure { background-color: #ffecec; color: #000000; padding-top: 7px; }
 
 .ppiMessages {
-
-
     color:#000000;
     cursor:pointer;
     margin:0;
@@ -12,7 +10,7 @@
     top:30px;
     width:400px;
     z-index:8000;
-    font-size: 0.8em;
+    font-size: 1.2em;
 }
 
 .ppiMessagesSuccess {
